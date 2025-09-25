@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>รัฐศาสตร์ บรรจงกุล(ตั้น) chatgpt</title>
+</head>
+<body>
+<h1>รัฐศาสตร์ บรรจงกุล(ตั้น)chatgpt</h1><br><hr>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฟอร์มสมัครสมาชิกชมรมคนรักสุนัข</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container mt-5 mb-5">
+    <div class="card shadow-sm p-4">
+        <h2 class="card-title text-center mb-4">แบบฟอร์มสมัครสมาชิกชมรมคนรักสุนัข</h2>
+        <form action="#" method="post">
+            
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label for="fullName" class="form-label">ชื่อ-นามสกุล</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="กรอกชื่อ-นามสกุล" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">อีเมล</label>
+                    <input type="email" class="form-control" id="email" placeholder="ตัวอย่าง: example@email.com" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="password" class="form-label">รหัสผ่าน</label>
+                    <input type="password" class="form-control" id="password" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="confirmPassword" class="form-label">ยืนยันรหัสผ่าน</label>
+                    <input type="password" class="form-control" id="confirmPassword" required>
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label for="tel" class="form-label">เบอร์โทรศัพท์</label>
+                    <input type="tel" class="form-control" id="tel" placeholder="ตัวอย่าง: 0812345678" pattern="[0-9]{10}">
+                    <div class="form-text">กรุณากรอกเบอร์โทร 10 หลัก (เช่น 08XXXXXXXX)</div>
+                </div>
+                <div class="col-md-6">
+                    <label for="website" class="form-label">เว็บไซต์ (ถ้ามี)</label>
+                    <input type="url" class="form-control" id="website" placeholder="ตัวอย่าง: https://www.your-website.com">
+                </div>
+                <div class="col-md-6">
+                    <label for="dogCount" class="form-label">จำนวนสุนัขที่คุณเลี้ยง</label>
+                    <input type="number" class="form-control" id="dogCount" min="0" max="10" value="0">
+                </div>
+                <div class="col-md-6">
+                    <label for="experienceRange" class="form-label">ระดับประสบการณ์การเลี้ยงสุนัข (0=มือใหม่, 10=ผู้เชี่ยวชาญ)</label>
+                    <input type="range" class="form-range" id="experienceRange" min="0" max="10" value="5">
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label for="birthdate" class="form-label">วันเกิดของคุณ</label>
+                    <input type="date" class="form-control" id="birthdate">
+                </div>
+                <div class="col-md-6">
+                    <label for="joinTime" class="form-label">เวลาที่คุณต้องการติดต่อกลับ</label>
+                    <input type="time" class="form-control" id="joinTime">
+                </div>
+                <div class="col-md-6">
+                    <label for="meetingDateTime" class="form-label">วัน-เวลาที่สะดวกนัดหมาย</label>
+                    <input type="datetime-local" class="form-control" id="meetingDateTime">
+                </div>
+                <div class="col-md-6">
+                    <label for="favoriteMonth" class="form-label">เดือนที่คุณชื่นชอบ</label>
+                    <input type="month" class="form-control" id="favoriteMonth">
+                </div>
+                <div class="col-md-6">
+                    <label for="favoriteWeek" class="form-label">สัปดาห์ที่เหมาะสมกับการจัดกิจกรรม</label>
+                    <input type="week" class="form-control" id="favoriteWeek">
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label for="favoriteColor" class="form-label">เลือกสีที่แสดงถึงสุนัขตัวโปรดของคุณ</label>
+                    <input type="color" class="form-control form-control-color" id="favoriteColor" value="#563d7c">
+                </div>
+                <div class="col-md-6">
+                    <label for="dogPhoto" class="form-label">อัปโหลดรูปสุนัขของคุณ</label>
+                    <input type="file" class="form-control" id="dogPhoto" accept="image/*">
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="mb-3">
+                <label class="form-label d-block">คุณเลี้ยงสุนัขสายพันธุ์อะไรเป็นพิเศษ?</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="dogBreed" id="breedGolden" value="golden" checked>
+                    <label class="form-check-label" for="breedGolden">โกลเด้น รีทรีฟเวอร์</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="dogBreed" id="breedPomeranian" value="pomeranian">
+                    <label class="form-check-label" for="breedPomeranian">ปอมเมอเรเนียน</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="dogBreed" id="breedOther" value="other">
+                    <label class="form-check-label" for="breedOther">อื่นๆ</label>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label d-block">คุณสนใจกิจกรรมไหนเป็นพิเศษ?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="walk" id="interestWalk">
+                    <label class="form-check-label" for="interestWalk">
+                        กิจกรรมเดินเล่น
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="training" id="interestTraining">
+                    <label class="form-check-label" for="interestTraining">
+                        ฝึกสุนัขเบื้องต้น
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="health" id="interestHealth">
+                    <label class="form-check-label" for="interestHealth">
+                        การดูแลสุขภาพสุนัข
+                    </label>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+
+            <input type="hidden" name="form_version" value="1.0">
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="reset" class="btn btn-outline-secondary me-md-2">ล้างข้อมูล</button>
+                <button type="submit" class="btn btn-primary">ส่งแบบฟอร์ม</button>
+            </div>
+            
+        </form>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
